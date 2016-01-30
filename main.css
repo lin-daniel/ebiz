@@ -1,187 +1,261 @@
-<!DOCTYPE html>
-<html>
+.nav a {
+  color: #5a5a5a;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
 
-  <head>
+.nav .container > ul.nav.nav-pills > li {
+  float: none;
+  display: inline-block;
+  width:16%;
+}
 
-    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
-    
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
-  <title>Home</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <style>
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 100%;
-      margin: auto;
-  }
-  </style>
-  </head>
+.nav-pills {
+  text-align: center;
+}
 
-  <body>
-    <div class="nav">
-      <div class="container">
-        <ul class="nav nav-pills">
-          <li><a href="C:\Users\Darren\Desktop\BootStrap\index.html">Home</a></li>
-          <li><a href="C:\Users\Darren\Desktop\BootStrap\calendar.html">Calendar</a></li>
-          <li><a href="C:\Users\Darren\Desktop\BootStrap\reserve_and_pay.html">Reserve</a></li>
-          <li><a href="C:\Users\Darren\Desktop\BootStrap\photo_gallery.html">Gallery</a></li>
-          <li><a href="C:\Users\Darren\Desktop\BootStrap\about_us.html">About</a></li>
-        </ul>
-      </div>
-    </div>
 
-    <div class="jumbotron">
-      <div class="container">
-          <br>
-          <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-              <li data-target="#myCarousel" data-slide-to="3"></li>
-            </ol>
+.jumbotron {
+  background-image:url('https://pixabay.com/static/uploads/photo/2015/10/27/21/10/arcades-1009647_960_720.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 500px;
+}
 
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
+.jumbotron .container {
+  position: relative;
+}
 
-                  <div class="item active">
-                    <img src="https://i.ytimg.com/vi/a6gHj0bHmg8/maxresdefault.jpg" alt="Chania" width="460" height="345">
-                    <div class="carousel-caption">
-                      <h3>Bear</h3>
-                      <p>I like bears.</p>
-                    </div>
-                  </div>
+.jumbotron h1 {
+  color: #FFFFFF;
+  font-size: 48px;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
 
-                  <div class="item">
-                    <img src="http://assets.nydailynews.com/polopoly_fs/1.1145388.1346085781!/img/httpImage/image.jpg_gen/derivatives/article_970/bears28n-1-web.jpg" alt="Chania" width="460" height="345">
-                    <div class="carousel-caption">
-                      <h3>More Bears</h3>
-                      <p>Bears are cool.</p>
-                    </div>
-                  </div>
-                
-                  <div class="item">
-                    <img src="http://img.lum.dolimg.com/v1/images/image_7ab7525c.jpeg" alt="Flower" width="460" height="345">
-                    <div class="carousel-caption">
-                      <h3>Even More Bears</h3>
-                      <p>Bears were the first thing that popped into my mind.</p>
-                    </div>
-                  </div>
+.jumbotron a {
+  color: #FFFFFF;
+  font-size: 24px;
+}
 
-                  <div class="item">
-                    <img src="http://cdn.earthporm.com/wp-content/uploads/2014/07/funny-bears-doing-human-things-1.jpg" alt="Flower" width="460" height="345">
-                    <div class="carousel-caption">
-                      <h3>Last Bear</h3>
-                      <p>Im sick of bears now.</p>
-                    </div>
-                  </div>
-              
-                </div>
+.learn-more {
+  background-color: #f7f7f7;
+}
 
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-            </div>
-                    <h1>Weddings, Meetings, Anything.</h1>
-                    <a href="C:\Users\Darren\Desktop\BootStrap\calendar.html">Reserve your event now.</a>
-      </div>
-    </div>
-    <div class="neighborhood-guides">
-    	        <div class="container">
-                    <div class="row">
-                        <div class="col-md-3">
-        	                <h2>Features</h2>
-        	                <p>Features include:</p>
-                        </div>
-        	            <div class="col-md-6">
-        	                <div class="thumbnail">
-        	                    <img src="https://pixabay.com/static/uploads/photo/2015/09/13/15/05/festival-938253_960_720.jpg">
-        	                </div>
-        	            </div>
-        	            </div>
-        	        </div>
-                </div>
-    <div class="learn-more">
-	    <div class="container">
-        	        <div class="row">
-        	    	    <div class="col-md-4">
-        	                <div>
-        		    	        <h3>Travel</h3>
-        			            <p>From apartments and rooms to treehouses and boats: stay in unique spaces in 192 countries.</p>
-        			            <p><a href="#">See how to travel on Airbnb</a></p>
-        	                </div>
-            		        <div class="col-md-4">
-            			        <h3>Host</h3>
-            			        <p>Renting out your unused space could pay your bills or fund your next vacation.</p>
-            			        <p><a href="#">Learn more about hosting</a></p>
-            		        </div>
-        		    <div class="col-md-4">
-        			    <h3>Trust and Safety</h3>
-        			    <p>From Verified ID to our worldwide customer support team, we've got your back.</p>
-        			    <p><a href="#">Learn about trust at Airbnb</a></p>
-        			</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="video">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                        <img src="https://lh5.ggpht.com/jZ8XCjpCQWWZ5GLhbjRAufsw3JXePHUJVfEvMH3D055ghq0dyiSP3YxfSc_czPhtCLSO=w300">
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div>
-                        <p>Text</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="container">
-    <header>
-        <h1>Banner</h1>
-        <p>Pictures</p>
-    </header>
-    
-    <!-- Each image is 350px by 233px -->
-    <div class="photobanner">
-        <img class="first" src="image-1.jpg" alt="" />
-        <img src="image-2.jpg" alt="" />
-        <img src="image-3.jpg" alt="" />
-        <img src="image-4.jpg" alt="" />
-        <img src="image-5.jpg" alt="" />
-        <img src="image-6.jpg" alt="" />
-        <img src="image-1.jpg" alt="" />
-        <img src="image-2.jpg" alt="" />
-        <img src="image-3.jpg" alt="" />
-        <img src="image-4.jpg" alt="" />
-    </div>
-    <div class="about_us">
-        <div class="container">
-            <h1>About Us</h1>
-            <div class="row">
-                <div class="col-md-4">
-                    <p><a href="C:\Users\Darren\Desktop\BootStrap\about_us.html">Learn More</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
+.learn-more h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
 
-  </body>
-</html>
+.learn-more a {
+  color: #00b0ff;
+}
+
+.neighborhood-guides {
+    background-color: #efefef;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.neighborhood-guides h2{
+    color: #393c3d;
+    font-size: 24px;
+}
+
+.neighborhood-guides p {
+    font-size: 15px;
+    margin-bottom: 13px;
+}
+
+.neighborhood-guides img {
+    float: right;
+}
+
+* {margin: 0; padding: 0;}
+
+body {
+  <!-- src: http://subtlepatterns.com/?p=1045 -->
+  background: url('dark_geometric.png');
+}
+
+#container {
+  width: 1000px;
+  overflow: hidden;
+  margin: 50px auto;
+  background: white;
+}
+
+/*header*/
+header {
+  width: 800px;
+  margin: 40px auto;
+}
+
+header h1 {
+  text-align: center;
+  font: 100 60px/1.5 Helvetica, Verdana, sans-serif;
+  
+}
+
+header p {
+  font: 100 15px/1.5 Helvetica, Verdana, sans-serif;
+  text-align: justify;
+}
+
+/*photobanner*/
+
+/.photobanner {
+  height: 233px;
+  width: 3550px;
+  margin-bottom: 80px;
+}
+
+/*keyframe animations*/
+.first {
+  -webkit-animation: bannermove 30s linear infinite;
+     -moz-animation: bannermove 30s linear infinite;
+      -ms-animation: bannermove 30s linear infinite;
+       -o-animation: bannermove 30s linear infinite;
+          animation: bannermove 30s linear infinite;
+}
+
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -2125px;
+ }
+
+}
+
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+
+}
+
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+
+}
+
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+
+}
+
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+
+}
+/*keyframe animations*/
+.first {
+  -webkit-animation: bannermove 30s linear infinite;
+     -moz-animation: bannermove 30s linear infinite;
+      -ms-animation: bannermove 30s linear infinite;
+       -o-animation: bannermove 30s linear infinite;
+          animation: bannermove 30s linear infinite;
+}
+
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -2125px;
+ }
+
+}
+
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+
+}
+
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+
+}
+
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+
+}
+
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+
+}
+
+.photobanner {
+  height: 233px;
+  width: 3550px;
+  margin-bottom: 80px;
+}
+
+.photobanner img {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.photobanner img:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
+
+  -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+  box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+
+
+
+
