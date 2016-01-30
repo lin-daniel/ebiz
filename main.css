@@ -26,6 +26,7 @@
 
 .jumbotron .container {
   position: relative;
+  top: 90px;
 }
 
 .jumbotron h1 {
