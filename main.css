@@ -6,7 +6,7 @@
   text-transform: uppercase;
 }
 
-.nav .container > ul.nav.nav-pills > li {
+.nav .container-fluid > ul.nav.nav-pills > li {
   float: none;
   display: inline-block;
   width:16%;
