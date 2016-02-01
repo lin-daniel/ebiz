@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Stormpath Webapp Sample | <c:out value="${!empty title ? title : ''}"/></title>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"></link>
     <%-- <link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet" --%>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,14 +27,16 @@
 
         <div class="header">
 
-            <ul class="nav nav-pills pull-right">
+            <ul class="nav nav-pills nav-justified">
                 <c:set var="uri" value="${requestScope['javax.servlet.forward.request_uri']}"/>
                 <li<c:if test="${fn:endsWith(uri,'/')}"> class="active"</c:if>><a href="${pageContext.request.contextPath}/">Home</a></li>
-
+                <li><a href="#">Reserve</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About</a></li>
                 <%-- Change upper right context menu depending on if the user is logged in or not: --%>
                 <c:choose>
                     <c:when test="${!empty account}">
-                        <li<c:if test="${fn:endsWith(uri,'dashboard')}"> class="active"</c:if>><a href="${pageContext.request.contextPath}/dashboard">Dashboard</a></li>
+                        <li<c:if test="${fn:endsWith(uri,'dashboard')}"> class="active"</c:if>><a href="${pageContext.request.contextPath}/dashboard">My Account</a></li>
                         <li><a href="${pageContext.request.contextPath}/logout">Logout</a></li>
                     </c:when>
                     <c:otherwise>
