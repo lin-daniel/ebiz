@@ -1,22 +1,22 @@
 <html>
 	<head>
-	<title>Reservation complete</title>
+	<title>Reservation complete!</title>
 	</head>
 	<body>
-		<center>
-		<h1>Thanks for your reservation!</h1>
+		<h1>Thanks for your reservation!</h1><br>
+		<h2>Reservation info:</h2>
 		<ul>
 			<li>
-				<p>
 					<b>First Name:</b>
 			   		<%=request.getParameter("first_name")%>
-				</p>
 			</li>
 			<li>
-				<p>
 					<b>Last Name:</b>
 			    	<%=request.getParameter("last_name")%>
-				</p>
+			</li>
+			<li>
+					<b>Date:</b>
+					<%=request.getParameter("month")%>
 			</li>
 		</ul>
 	</body>

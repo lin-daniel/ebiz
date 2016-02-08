@@ -1,0 +1,19 @@
+.nav a {
+  color: #5a5a5a;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav.nav-pills.nav-justified li {
+  float: none;
+  display: inline-block;
+  width: 16%;
+}
+
+.nav-pills {
+  text-align: center;
+}
+
+
